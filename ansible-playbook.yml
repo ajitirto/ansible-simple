@@ -1,0 +1,29 @@
+---
+- name: Playbook linode
+  hosts: linode  
+  become: yes
+
+  
+  tasks:
+    # - name: Update APT package cache
+    #   apt:
+    #     update_cache: yes
+
+    # - name: Install Zsh
+    #   apt:
+    #     name: zsh
+    #     state: present
+    
+    # - name: Install tree
+    #   apt:
+    #     name: tree
+    #     state: present
+
+    - name: Print message
+      ansible.builtin.debug:
+        msg: Hello world
+    
+    # - name: Install ranger
+    #   apt:
+    #     name: ranger
+    #     state: present
